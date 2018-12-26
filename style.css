@@ -2,7 +2,7 @@ body {
     font:15px/1.5 Arial;
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: #003478;
 }
 .container {
     width: 80%;
@@ -95,7 +95,7 @@ header .firstword, header .current a{
         display: none;
     }
 }
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
     header #branding h1,
     #branding {
         float: left;
@@ -127,6 +127,33 @@ header .firstword, header .current a{
     main ul li:hover {
         display: none;
      }
+    
+     #selectionField {
+         font-size: 25px!important;
+     }
+    
+    #selectionField .education, .aim1, .aim2, .gender{
+        height: 50px!important;
+        font-size: 30px!important;
+    }
+
+    #selectionField .education {
+        width: 250px!important;
+        height: 60px!important;
+        color: white;
+        margin-top: 10px;
+    }
+
+    #selectionField .aim1 {
+        width: 265px!important;
+    }
+    
+    #selectionField .aim2 {
+        width: 280px!important;    }
+
+    #selectionField .submitButton {
+        margin-top: 10px;
+    }
 }
 
 #slider,
@@ -151,13 +178,13 @@ header .firstword, header .current a{
   background-repeat: no-repeat;
 }
 .slide1 {
-  background-image: url(image3.jpg);
+  background-image: url(img/image12.jpg);
 }
 .slide2 {
-  background-image: url(image2.jpg);
+  background-image: url(img/image2.jpg);
 }
 .slide3 {
-  background-image: url(image4.jpg);
+  background-image: url(img/image4.jpg);
 }
 
 .slide-content {
@@ -201,6 +228,7 @@ header .firstword, header .current a{
 main {
     min-height: 400px;
     margin-left: 40px;
+    margin-top: 20px;
 }
 
 main ul {
@@ -237,21 +265,65 @@ main ul li a:hover {
 }
 
 main ul li:first-child {
-    background-image: url(mission.jpg);
+    background-image: url(img/mission.jpg);
 }
 
 main ul li:nth-child(2) {
-    background-image: url(education.jpg);
+    background-image: url(img/education.jpg);
 }
 
 main ul li:nth-child(3) {
-    background-image: url(career.jpg);
+    background-image: url(img/career.jpg);
 }
 
 main ul li:nth-child(4) {
-    background-image: url(lifestyle.jpg);
+    background-image: url(img/lifestyle.jpg);
 }
 
 main ul li:nth-child(5) {
-    background-image: url(join.jpg);
+    background-image: url(img/join.jpg);
+}
+
+#selectionField {
+    min-height: 500px;
+    background-color: #003478;
+    color: white;
+    font-size: 40px;
+}
+#selectionField .selectionBox {
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    margin-top: 180px;
+}
+#selectionField .gender, .education, .aim1, .aim2 {
+    width: 90px;
+    height: 80px;
+    font-size: 40px;
+    color: white;
+    background-color: #003478;
+    margin-top: 10px;
+}
+
+#selectionField .education, .aim1, .aim2 {
+    width: 450px;
+}
+
+#selectionField .gender:hover, .education:hover, .aim1:hover, .aim2:hover {
+    background-color: rgb(63, 71, 109);
+    transition-duration: 170ms;
+}
+
+#selectionField .submitButton {
+    width: 100px;
+    height: 50px;
+    color: #9b9b9b;
+    background-color: #003478;
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+#selectionField .submitButton:hover {
+    background-color: #003478;
+    transition-duration: 170ms;
 }

@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Space Force</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
 </head>
 <body>
     <header>
@@ -71,6 +70,34 @@
           </ul>
         </article>
     </main>
+    <div id="selectionField">
+      <div class="selectionBox">
+          I am a <select name="gender" class=gender>
+              <option value="guy">guy</option>
+              <option value="girl">girl</option>
+            </select>
+          who is <select name="education" class=education>
+              <option value="highSchool">in high school</option>
+              <option value="highSchoolGraduate">a high school graduate</option>
+              <option value="inCollege">currently in college</option>
+              <option value="collegeGraduate">a college graduate</option>
+              <option value="working">a working professional</option>
+            </select>
+          <br>wanting to <select name="aim1" class=aim1>
+              <option value="getEducation">get an education</option>
+              <option value="makeMoney">make money</option>
+              <option value="getCareerTraining">get career training</option>
+              <option value="travelInSpace">travel in space</option>
+            </select>and
+            <br><select name="aim2" class=aim2>
+                <option value="serveCountry">serve my country</option>
+                <option value="utilizeTech">utilize the latest tech</option>
+                <option value="seekAdventures">seek new adventures</option>
+                </select> 
+          <br>
+          <input type="submit" value="Submit" class="submitButton">
+      </div>
+    </div>
 
     <script>
             function openSlideMenu(){
@@ -81,7 +108,7 @@
               document.getElementById('side-menu').style.width = '0';
             }
 
-            //აქ მინდა რო ბურგერ მენიუთივე იხურებოდეს და X აღარ იყოს საჭირო (შეიძლება if გამოგადგეს)
+            //აქ მინდა რო ბურგერ მენიუთივე იხურებოდეს და X აღარ იყოს საჭირო
             let sliderImages = document.querySelectorAll(".slide"),
   arrowLeft = document.querySelector("#arrow-left"),
   arrowRight = document.querySelector("#arrow-right"),
