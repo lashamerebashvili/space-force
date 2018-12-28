@@ -81,10 +81,10 @@ header .firstword, header .current a{
     color:#fff;
   }
   
-  .side-nav .btn-close{
+  .side-nav {
     position:absolute;
-    top:0;
-    right:14px;
+    top:85px;
+    right:0px;
     font-size:36px;
     margin-left:50px;
   }

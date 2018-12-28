@@ -20,7 +20,7 @@
                     <li><a href="#">Innovations</a></li>
                     <li><a href="#">Services</a></li>
                     <li><span class="open-slide">
-                            <a class="exception" href="#" onclick="openSlideMenu()">
+                            <a class="exception" onclick="SlideMenu()">
                               <svg width="30" height="30">
                                   <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
                                   <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
@@ -32,7 +32,7 @@
                 </ul>
             </nav>
             <div id="side-menu" class="side-nav">
-                    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                    <a href="index.html">Home</a>
                     <a href="#">News & Events</a>
                     <a href="#">Innovations</a>
                     <a href="#">Services</a>
@@ -100,15 +100,15 @@
     </div>
 
     <script>
-            function openSlideMenu(){
+            let slideMenu = document.querySelector("#side-menu");
+
+            function SlideMenu() {
+              if (!slideMenu.style.width || slideMenu.style.width == '0px')
               document.getElementById('side-menu').style.width = '260px';
-            }
-        
-            function closeSlideMenu(){
+              else 
               document.getElementById('side-menu').style.width = '0';
             }
 
-            //აქ მინდა რო ბურგერ მენიუთივე იხურებოდეს და X აღარ იყოს საჭირო
             let sliderImages = document.querySelectorAll(".slide"),
   arrowLeft = document.querySelector("#arrow-left"),
   arrowRight = document.querySelector("#arrow-right"),
